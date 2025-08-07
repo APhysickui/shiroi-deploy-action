@@ -164,7 +164,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
-          key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           #script_stop: true 移除了改行指令，因为该指令已经停止使用了会提示但不影响，不改也行
           script: |
