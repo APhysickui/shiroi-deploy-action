@@ -135,11 +135,8 @@ jobs:
           port: ${{ secrets.PORT }} # 服务器 SSH 端口 (默认 22)
           source: 'release.zip'
           target: '/tmp/shiro'
-          # 【重要：认证方式二选一】
-          # 方式一：使用密码 (推荐初学者使用，最简单)
+          # 使用密码 
           password: ${{ secrets.PASSWORD }}
-          # 方式二：使用 SSH Key (如果使用这种，请删除上面一行 password)
-          # key: ${{ secrets.KEY }}
 
       - name: Execute deploy script on server
         uses: appleboy/ssh-action@master
